@@ -135,17 +135,9 @@
 
 // isPalindrome(input)
 
+function checkBiggestNumber(nums) {
+    const bigNum = Math.max(...nums);
+    console.log(bigNum);
+}   
 
-function palindrome() {
-    let input = prompt("Enter any word");
-
-    const reversedInput = input.split("").reverse().join("")
-
-    if (input === reversedInput) {
-        console.log(`Woah! ${input} and ${reversedInput} are palindrome!`);
-    } else {
-        console.log(`Opps! ${input} and ${reversedInput} aren't palindrome!`);
-    }
-}
-palindrome()
-
+checkBiggestNumber([1, 2, 3, 4, 5, 6])
